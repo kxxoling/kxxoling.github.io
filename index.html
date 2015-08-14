@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- From http://thewebdevelopertimes.com/css-only-parallax-scrolling-effect/ -->
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Basic CSS-Only Parallax Effect</title>
+  <link href='/css/main.css' rel='stylesheet'>
+</head>
+<body>
+  <div id="Container">
+    <div id="ParallaxSection1">
+      <h1 id="BigText">
+        请叫吾蘑菇炭
+      </h1>
+      <span id="SmallText">&downarrow; Look at me! &downarrow;</span>
+    </div>
+    <div id="BigDiv1">
+      <div class="TextContainer">
+        <h2>网站搭建中……</h2>
+        <p>下面都是瞎写的，蘑菇炭萌萌哒～～</p>
+        <p>Quickly initiate integrated imperatives vis-a-vis prospective metrics. </p>
+        <p>Compellingly leverage existing functional quality vectors before bleeding-edge users.</p>
+      </div>
+    </div>
+    <div id="ParallaxSection2">
+    </div>
+    <div id="BigDiv2">
+      <div class="TextContainer">
+        <h2>有爱竹林组</h2>
+        <p>老师超美！不喜欢就是不客观！(っ*'ω'*c) </p>
+        <p>Compellingly leverage existing functional quality vectors before bleeding-edge users.</p>
+      </div>
+    </div>
+    <div id="ParallaxSection3">
+    </div>
+    <div id="BigDiv3">
+      <div class="TextContainer">
+        <h2>不死组</h2>
+        <p>穿越千年的战争……</p>
+        <p>Quickly initiate integrated imperatives vis-a-vis prospective metrics.</p>
+        <p>Compellingly leverage existing functional quality vectors before bleeding-edge users.</p>
+        <a href="http://windrunner.info" class="button large">
+          我的网站
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function setHeight( element ) {
+      var h = window.innerHeight
+          || document.documentElement.clientHeight
+          || document.body.clientHeight;
+
+      element.style.minHeight = h + "px";
+    }
+    setHeight(document.getElementById("BigDiv1"));
+    setHeight(document.getElementById("BigDiv2"));
+    setHeight(document.getElementById("BigDiv3"));
+    setHeight(document.getElementById("ParallaxSection1"));
+  </script>
+</body>
+</html>
